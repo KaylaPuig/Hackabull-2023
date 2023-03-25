@@ -1,12 +1,13 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1679770809
-delete-this-script.gd::GDScript::-1::1679766661::0::1::::<>Sprite2D<>::
+::res://::1679772901
 icon.svg::CompressedTexture2D::6886299511971173896::1679765135::1679765237::1::::<><>::
 main.gd::GDScript::-1::1679766443::0::1::::<>Node2D<>::
-main.tscn::PackedScene::7920085791731538962::1679767107::0::1::::<><>::res://main.gd<>uid://ch8c1pxufk685<>res://delete-this-script.gd
-Player.tscn::PackedScene::6442852182288542371::1679771139::0::1::::<><>::uid://bnwp72ufmf8w7
+main.tscn::PackedScene::7920085791731538962::1679772901::0::1::::<><>::res://main.gd<>uid://cx173mivxq2qh
+Player.tscn::PackedScene::6442852182288542371::1679772901::0::1::::<><>::res://Player.gd<>uid://bnwp72ufmf8w7
+Player.gd::GDScript::-1::1679772901::0::1::::<>CharacterBody2D<>::
 test.png::CompressedTexture2D::5332456427660035548::1679766000::1679766007::1::::<><>::
-::res://assets/::1679770820
-::res://assets/player/::1679771048
+::res://assets/::1679773720
+fontmap.png::CompressedTexture2D::6680465818009776731::1679773721::1679773722::1::::<><>::
+::res://assets/player/::1679771223
 player_down_sheet.png::CompressedTexture2D::3345261311143281560::1679771048::1679771223::1::::<><>::
 ::res://gimp assets/::1679770473
