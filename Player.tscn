@@ -7,13 +7,13 @@
 atlas = ExtResource("1_y0mwj")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kdcad"]
-atlas = ExtResource("1_y0mwj")
-region = Rect2(0, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_vbm3j"]
 atlas = ExtResource("1_y0mwj")
 region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdcad"]
+atlas = ExtResource("1_y0mwj")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uo8rb"]
 atlas = ExtResource("1_y0mwj")
@@ -31,9 +31,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kdcad")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_vbm3j")
 }, {
 "duration": 1.0,
@@ -41,6 +38,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_uo8rb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdcad")
 }],
 "loop": true,
 "name": &"walk_down",
@@ -48,7 +48,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5xrm"]
-size = Vector2(32, 32)
+size = Vector2(20, 24)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_v82tr")
@@ -58,4 +58,5 @@ sprite_frames = SubResource("SpriteFrames_3e5je")
 animation = &"walk_down"
 
 [node name="CollisionRect" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_q5xrm")
