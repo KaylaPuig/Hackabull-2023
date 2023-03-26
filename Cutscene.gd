@@ -5,7 +5,6 @@ extends Node2D
 func _ready():
 	$CutsceneSprite.play("default")
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if not $CutsceneSprite.is_playing() or Input.is_action_just_pressed("ui_accept"):

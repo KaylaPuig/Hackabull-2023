@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
 var lane = 0
+var start_slide = false
 var sliding = false
 var sliding_elapsed = 0.0
 
 const LANE_MIN = -1
 const LANE_MAX = 1
-const LANE_DIST = 50.0
+const LANE_DIST = 32.0
 const SPEED = 300.0
 const GRAVITY = 300.0
 const JUMPHEIGHT = 150.0
@@ -19,19 +20,28 @@ func _physics_process(delta):
 		lane += 1
 	if not sliding and Input.is_action_just_pressed("ui_left"):
 		lane -= 1
-	if is_on_floor() and Input.is_action_just_pressed("ui_down"):
-		sliding = true
-	if is_on_floor():
+	if is_on_floor() and not sliding and Input.is_action_just_pressed("ui_down"):
+		start_slide = true
+	if is_on_floor() and not sliding:
 		$Animations.play("walk_down")
 	if not sliding and is_on_floor() and (Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_accept")):
 		velocity.y = -JUMPHEIGHT
 		$Animations.play("jump")
-	if sliding:
+	if start_slide:
+		start_slide = false
+		sliding = true
 		$Animations.play("slide")
+	
+	if sliding:
+		$CollisionRect.disabled = true
+		$CollisionSlidingRect.disabled = false
 		sliding_elapsed += delta
 		if sliding_elapsed > 0.67:
 			sliding = false
 			sliding_elapsed = 0.0
+	else:
+		$CollisionRect.disabled = false
+		$CollisionSlidingRect.disabled = true
 	
 	# clamp lane value
 	if lane < LANE_MIN:

@@ -5,3 +5,5 @@ res://Cutscene.tscn
 res://Distance Display.gd
 res://Run.gd
 res://Letter.tscn
+res://Player.gd
+res://Cutscene.gd
