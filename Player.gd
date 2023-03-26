@@ -9,7 +9,10 @@ const LANE_MAX = 1
 const LANE_DIST = 50.0
 const SPEED = 300.0
 const GRAVITY = 300.0
-const JUMPHEIGHT = 200.0
+const JUMPHEIGHT = 150.0
+
+func _ready():
+	$Animations.play("standing")
 
 func _physics_process(delta):
 	if not sliding and Input.is_action_just_pressed("ui_right"):
@@ -26,7 +29,7 @@ func _physics_process(delta):
 	if sliding:
 		$Animations.play("slide")
 		sliding_elapsed += delta
-		if sliding_elapsed > 0.5:
+		if sliding_elapsed > 0.67:
 			sliding = false
 			sliding_elapsed = 0.0
 	

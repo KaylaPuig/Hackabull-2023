@@ -1,9 +1,7 @@
 res://Player.tscn
-res://Letter.tscn
 res://Run.tscn
 res://Menu.tscn
-res://Player.gd
-res://Run.gd
 res://Cutscene.tscn
-res://Cutscene.gd
-res://Menu.gd
+res://Distance Display.gd
+res://Run.gd
+res://Letter.tscn
