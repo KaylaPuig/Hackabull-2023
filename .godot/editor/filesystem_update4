@@ -1,10 +1,5 @@
 res://main.tscn
-res://main.gd
-res://delete-this-script.gd
 res://Player.tscn
-res://Player.gd
-res://Dialogue Box.tscn
-res://Dialogue Box.gd
 res://Letter.tscn
-res://Letter.gd
-res://Debug Level.tscn
+res://Player.gd
+res://Run.tscn
