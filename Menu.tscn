@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://ci07qvtei1ucv"]
+[gd_scene load_steps=4 format=3 uid="uid://ci07qvtei1ucv"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_waj8h"]
+[ext_resource type="Texture2D" uid="uid://eggllgv7aock" path="res://assets/buttons.png" id="2_63qt5"]
+[ext_resource type="Texture2D" uid="uid://c8x3oagi5dkrw" path="res://assets/button_selector.png" id="3_nrnxy"]
 
 [node name="Menu" type="Node2D"]
+script = ExtResource("1_waj8h")
+
+[node name="Selector" type="Sprite2D" parent="."]
+position = Vector2(193.064, 168)
+scale = Vector2(0.922, 1)
+texture = ExtResource("3_nrnxy")
+
+[node name="Buttons" type="Sprite2D" parent="."]
+texture = ExtResource("2_63qt5")
+centered = false
