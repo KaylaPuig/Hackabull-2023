@@ -22,9 +22,13 @@ func _process(delta):
 		cur_rand_time = next_random_time()
 		spawn_random_obstacle()
 	
+	var temp = []
 	for obs in living_obstacles:
 		if obs.position.y > 200:
 			remove_child(obs)
+		else:
+			temp.append(obs)
+	living_obstacles = temp
 	print(get_child_count())
 	elapsed += delta
 
@@ -55,3 +59,4 @@ func spawn_random_obstacle():
 func murder_all_offspring():
 	for child in get_children():
 		remove_child(child)
+	living_obstacles = []

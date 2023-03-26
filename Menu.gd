@@ -12,14 +12,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_just_pressed("ui_up"):
 		selector_position = 0
 		$Selector.position.y = START_POS
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_just_pressed("ui_down"):
 		selector_position = 1
 		$Selector.position.y = END_POS
 	
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept"):
 		if selector_position == 0:
 			get_tree().change_scene_to_file("res://Cutscene.tscn")
 		if selector_position == 1:

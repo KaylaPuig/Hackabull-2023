@@ -1,12 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://b6m3myocy3rce"]
+[gd_scene load_steps=16 format=3 uid="uid://b6m3myocy3rce"]
 
 [ext_resource type="Script" path="res://Run.gd" id="1_7gxrf"]
 [ext_resource type="PackedScene" uid="uid://cx173mivxq2qh" path="res://Player.tscn" id="2_h4su4"]
+[ext_resource type="Script" path="res://Infinite Road.gd" id="2_rbvid"]
 [ext_resource type="Texture2D" uid="uid://5ecntrh0ekrb" path="res://assets/player/player_shadow.png" id="3_jq4mk"]
 [ext_resource type="Texture2D" uid="uid://bp60fw4ojrsug" path="res://assets/markless_road.png" id="3_v0muw"]
 [ext_resource type="Texture2D" uid="uid://d2xnlfx6qau8u" path="res://assets/Road lines/Road lines orange full.png" id="4_frfqo"]
 [ext_resource type="Script" path="res://Obstacle Spawner.gd" id="4_mlmck"]
 [ext_resource type="Script" path="res://Distance Display.gd" id="4_nbyl5"]
+[ext_resource type="Texture2D" uid="uid://dwdl2x04ktjnx" path="res://assets/sidewalk.png" id="4_x4tjn"]
+[ext_resource type="PackedScene" uid="uid://bobmngh0c34be" path="res://FBI Guy.tscn" id="7_h233c"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_aw8fr"]
 
@@ -16,6 +19,15 @@ texture = ExtResource("4_frfqo")
 
 [sub_resource type="TileSet" id="TileSet_o3d6x"]
 sources/2 = SubResource("TileSetAtlasSource_rsu4j")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8f0xv"]
+texture = ExtResource("4_x4tjn")
+texture_region_size = Vector2i(16, 15)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2eamo"]
+tile_size = Vector2i(16, 15)
+sources/0 = SubResource("TileSetAtlasSource_8f0xv")
 
 [node name="Run" type="Node2D"]
 script = ExtResource("1_7gxrf")
@@ -27,14 +39,20 @@ position = Vector2(-1, 80)
 shape = SubResource("WorldBoundaryShape2D_aw8fr")
 
 [node name="Infinite Road" type="Node2D" parent="."]
+script = ExtResource("2_rbvid")
 
 [node name="Asphalt" type="Sprite2D" parent="Infinite Road"]
 texture = ExtResource("3_v0muw")
 
-[node name="TileMap" type="TileMap" parent="Infinite Road"]
+[node name="Road lines" type="TileMap" parent="Infinite Road"]
 tile_set = SubResource("TileSet_o3d6x")
 format = 2
 layer_0/tile_data = PackedInt32Array(262143, 2, 0, 196608, 2, 0, 131072, 2, 0, 196607, 2, 0, 131071, 2, 0, 65536, 2, 0, 0, 2, 0, 65535, 2, 0, -65536, 2, 0, -1, 2, 0, -65537, 2, 0, -131072, 2, 0, -131073, 2, 0, -196608, 2, 0, -262144, 2, 0, -196609, 2, 0, -262145, 2, 0, -327680, 2, 0, -393216, 2, 0, -327681, 2, 0, -393217, 2, 0, -458752, 2, 0, -524288, 2, 0, -458753, 2, 0, -589824, 2, 0, -524289, 2, 0, 327679, 2, 0, 262144, 2, 0, 327680, 2, 0, 393215, 2, 0, 458751, 2, 0, 393216, 2, 0, 524287, 2, 0, 458752, 2, 0, 524288, 2, 0, 589823, 2, 0)
+
+[node name="Sidewalk" type="TileMap" parent="Infinite Road"]
+tile_set = SubResource("TileSet_2eamo")
+format = 2
+layer_0/tile_data = PackedInt32Array(131067, 0, 0, 655355, 0, 0, 589819, 0, 0, 524283, 0, 0, 458747, 0, 0, 393211, 0, 0, 327675, 0, 0, 262139, 0, 0, 196603, 0, 0, 65531, 0, 0, -5, 0, 0, -65541, 0, 0, -131077, 0, 0, -196613, 0, 0, -262149, 0, 0, -327685, 0, 0, -393221, 0, 0, -458757, 0, 0, -524293, 0, 0, -589829, 0, 0, -655365, 0, 0, -720892, 0, 0, -655356, 0, 0, -589820, 0, 0, -524284, 0, 0, -458748, 0, 0, -393212, 0, 0, -327676, 0, 0, -262140, 0, 0, -196604, 0, 0, -131068, 0, 0, -65532, 0, 0, 4, 0, 0, 65540, 0, 0, 131076, 0, 0, 196612, 0, 0, 262148, 0, 0, 327684, 0, 0, 393220, 0, 0, 458756, 0, 0, 524292, 0, 0, 589828, 0, 0, 655364, 0, 0, 720891, 0, 0)
 
 [node name="Player Shadow" type="Sprite2D" parent="."]
 position = Vector2(2.08165e-12, 68)
@@ -44,6 +62,8 @@ texture = ExtResource("3_jq4mk")
 script = ExtResource("4_mlmck")
 
 [node name="Player" parent="." instance=ExtResource("2_h4su4")]
+
+[node name="FBI Guy" parent="." instance=ExtResource("7_h233c")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 

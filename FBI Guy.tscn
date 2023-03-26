@@ -1,0 +1,86 @@
+[gd_scene load_steps=10 format=3 uid="uid://bobmngh0c34be"]
+
+[ext_resource type="Texture2D" uid="uid://hc41013q6vag" path="res://assets/irs man sprites.png" id="2_ekwe0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g46lm"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t8vci"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fprd8"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0pud"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yosjo"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mj2uv"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf41k"]
+atlas = ExtResource("2_ekwe0")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lw4gp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g46lm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t8vci")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fprd8")
+}],
+"loop": true,
+"name": &"slide",
+"speed": 4.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0pud")
+}],
+"loop": true,
+"name": &"standing",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yosjo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mj2uv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf41k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mj2uv")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 6.0
+}]
+
+[node name="FBI Guy" type="Node2D"]
+
+[node name="Animations" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.08165e-12, 48)
+sprite_frames = SubResource("SpriteFrames_lw4gp")
+animation = &"walk_down"
+autoplay = "walk_down"
