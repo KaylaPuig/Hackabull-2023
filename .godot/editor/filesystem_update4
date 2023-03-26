@@ -7,3 +7,10 @@ res://Run.gd
 res://Letter.tscn
 res://Player.gd
 res://Cutscene.gd
+res://Car.tscn
+res://Car.gd
+res://Obstacle Spawner.gd
+res://Barricade.tscn
+res://Barricade.gd
+res://Construction Idiots.tscn
+res://Construction Idiots.gd

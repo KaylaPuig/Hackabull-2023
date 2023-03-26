@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+var dead = false
+var avoiding_floor_objects = false
+var avoiding_ceiling_objects = false
+
 var lane = 0
 var start_slide = false
 var sliding = false
@@ -7,18 +11,22 @@ var sliding_elapsed = 0.0
 
 const LANE_MIN = -1
 const LANE_MAX = 1
-const LANE_DIST = 32.0
-const SPEED = 300.0
+const LANE_DIST = 36.0
+const SPEED = 150.0
 const GRAVITY = 300.0
-const JUMPHEIGHT = 150.0
+const JUMPHEIGHT = 120.0
 
 func _ready():
 	$Animations.play("standing")
 
 func _physics_process(delta):
-	if not sliding and Input.is_action_just_pressed("ui_right"):
+	if dead:
+		$Animations.play("standing")
+		return
+	
+	if is_on_floor() and not sliding and Input.is_action_just_pressed("ui_right"):
 		lane += 1
-	if not sliding and Input.is_action_just_pressed("ui_left"):
+	if is_on_floor() and not sliding and Input.is_action_just_pressed("ui_left"):
 		lane -= 1
 	if is_on_floor() and not sliding and Input.is_action_just_pressed("ui_down"):
 		start_slide = true
@@ -33,15 +41,10 @@ func _physics_process(delta):
 		$Animations.play("slide")
 	
 	if sliding:
-		$CollisionRect.disabled = true
-		$CollisionSlidingRect.disabled = false
 		sliding_elapsed += delta
 		if sliding_elapsed > 0.67:
 			sliding = false
 			sliding_elapsed = 0.0
-	else:
-		$CollisionRect.disabled = false
-		$CollisionSlidingRect.disabled = true
 	
 	# clamp lane value
 	if lane < LANE_MIN:
@@ -64,3 +67,13 @@ func _physics_process(delta):
 	velocity.y += GRAVITY * delta
 	
 	move_and_slide()
+	
+	avoiding_ceiling_objects = sliding
+	avoiding_floor_objects = not is_on_floor()
+
+
+func _on_deathbox_area_entered(area):
+	if area.is_in_group("floor") and not avoiding_floor_objects:
+		dead = true
+	if area.is_in_group("ceil") and not avoiding_ceiling_objects:
+		dead = true

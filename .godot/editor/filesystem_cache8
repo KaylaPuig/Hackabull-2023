@@ -1,25 +1,35 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1679802800
+::res://::1679811680
 Cutscene.gd::GDScript::-1::1679801820::0::1::::<>Node2D<>::
-Cutscene.tscn::PackedScene::8551542490012895237::1679802800::0::1::::<><>::res://Cutscene.gd<>uid://bepcigp64hr24
+Cutscene.tscn::PackedScene::8551542490012895237::1679811680::0::1::::<><>::res://Cutscene.gd<>uid://bepcigp64hr24
 icon.svg::CompressedTexture2D::6886299511971173896::1679765135::1679765237::1::::<><>::
 Letter.gd::GDScript::-1::1679778527::0::1::::<>AnimatedSprite2D<>::
-Letter.tscn::PackedScene::4191295400205411385::1679802800::0::1::::<><>::uid://c2gckcf052anj<>res://Letter.gd
+Letter.tscn::PackedScene::4191295400205411385::1679811680::0::1::::<><>::uid://c2gckcf052anj<>res://Letter.gd
 Menu.gd::GDScript::-1::1679797038::0::1::::<>Node2D<>::
-Menu.tscn::PackedScene::5387934209348075193::1679802800::0::1::::<><>::res://Menu.gd<>uid://eggllgv7aock<>uid://c8x3oagi5dkrw
-Player.gd::GDScript::-1::1679802782::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::6442852182288542371::1679802800::0::1::::<><>::res://Player.gd<>uid://bnwp72ufmf8w7<>uid://bn7whfw2av4fx<>uid://ckgl1y0xbi0wo
+Menu.tscn::PackedScene::5387934209348075193::1679811680::0::1::::<><>::res://Menu.gd<>uid://eggllgv7aock<>uid://c8x3oagi5dkrw
+Player.gd::GDScript::-1::1679811212::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::6442852182288542371::1679811680::0::1::::<><>::res://Player.gd<>uid://bnwp72ufmf8w7<>uid://bn7whfw2av4fx<>uid://ckgl1y0xbi0wo
 Distance Display.gd::GDScript::-1::1679800606::0::1::::<>Node2D<>::
-Run.gd::GDScript::-1::1679800459::0::1::::<>Node2D<>::
-Run.tscn::PackedScene::4588770157156870444::1679802800::0::1::::<><>::res://Run.gd<>uid://cx173mivxq2qh<>uid://c5d1l18bem7ea<>res://Distance Display.gd
+Car.tscn::PackedScene::2640871787268535598::1679811680::0::1::::<><>::res://Car.gd<>uid://ckwdjn6c3b15p<>uid://bfjqx8rpyvrbs<>uid://bl6kkfi348t7i<>uid://gnl6yy0y478s<>uid://bu2j851pxbk2y
+Car.gd::GDScript::-1::1679811071::0::1::::<>Node2D<>::
+Obstacle Spawner.gd::GDScript::-1::1679811632::0::1::::<>Node2D<>::
+Barricade.tscn::PackedScene::6720237765467419255::1679811680::0::1::::<><>::res://Barricade.gd<>uid://jaiegkja8i17<>uid://bh0pmv05wu7m1<>uid://bwvorj66v1evf<>uid://bylhboeboql7e
+Barricade.gd::GDScript::-1::1679811651::0::1::::<>Node2D<>::
+Run.gd::GDScript::-1::1679804451::0::1::::<>Node2D<>::
+Run.tscn::PackedScene::4588770157156870444::1679811680::0::1::::<><>::res://Run.gd<>uid://cx173mivxq2qh<>uid://5ecntrh0ekrb<>uid://bp60fw4ojrsug<>uid://d2xnlfx6qau8u<>res://Obstacle Spawner.gd<>res://Distance Display.gd
+Stripped sign 1.png::CompressedTexture2D::724513641248889331::1679807743::1679807750::1::::<><>::
+Stripped sign 2.png::CompressedTexture2D::1336513559191886160::1679807743::1679807750::1::::<><>::
 test.png::CompressedTexture2D::5332456427660035548::1679766000::1679766007::1::::<><>::
-::res://assets/::1679802841
+::res://assets/::1679808131
 buttons.png::CompressedTexture2D::293526174788641830::1679796119::1679796177::1::::<><>::
 button_selector.png::CompressedTexture2D::7138278982369305208::1679796168::1679796177::1::::<><>::
+construction men with pole.png::CompressedTexture2D::5594365242957187699::1679811778::1679811801::1::::<><>::
 cutscene-16frames.png::CompressedTexture2D::2698277784652614047::1679795529::1679795535::1::::<><>::
 dreamterrain.png::CompressedTexture2D::7126962269119996608::1679781271::1679781301::1::::<><>::
 fontmap.png::CompressedTexture2D::6680465818009776731::1679773721::1679773722::1::::<><>::
 irs man sprites.png::CompressedTexture2D::497259238949585362::1679800830::1679800853::1::::<><>::
+markless_road.png::CompressedTexture2D::3504777103389969806::1679808128::1679808131::1::::<><>::
+outdoors.png::CompressedTexture2D::5135726619755017259::1679804202::1679804235::1::::<><>::
 Tile sheet v1.png::CompressedTexture2D::3272098902998522752::1679802841::1679802843::1::::<><>::
 Tile sheet v3.png::CompressedTexture2D::1573155453711413159::1679802841::1679802843::1::::<><>::
 ::res://assets/Cars/::1679802666
@@ -46,19 +56,20 @@ Red striped car crashed.png::CompressedTexture2D::7657694263277881420::167980265
 Car yellow front.png::CompressedTexture2D::3846542756524860462::1679802659::1679802666::1::::<><>::
 Car yellow.png::CompressedTexture2D::3085847004455197190::1679802659::1679802666::1::::<><>::
 Yellow car crashed.png::CompressedTexture2D::6871735141507251843::1679802659::1679802666::1::::<><>::
-::res://assets/Construction objects/::1679802841
+::res://assets/Construction objects/::1679802843
 Construction sign.png::CompressedTexture2D::652898450250379985::1679802841::1679802843::1::::<><>::
 Street baracade 2.png::CompressedTexture2D::2930285360432926898::1679802841::1679802843::1::::<><>::
 Street baracade.png::CompressedTexture2D::632192802858413788::1679802841::1679802843::1::::<><>::
 Traffic cone.png::CompressedTexture2D::3974808094996859167::1679802841::1679802843::1::::<><>::
-::res://assets/player/::1679799914
+::res://assets/player/::1679804643
 player_down_sheet.png::CompressedTexture2D::3345261311143281560::1679792622::1679792623::1::::<><>::
 player_jump.png::CompressedTexture2D::3366284311345694781::1679792489::1679792503::1::::<><>::
+player_shadow.png::CompressedTexture2D::2114068494020460731::1679804641::1679804643::1::::<><>::
 slid sprint.png::CompressedTexture2D::5487831688080052046::1679799910::1679799914::1::::<><>::
-::res://assets/Road hazards/::1679802841
+::res://assets/Road hazards/::1679802843
 Man hole.png::CompressedTexture2D::3122913630115583448::1679802841::1679802843::1::::<><>::
 Oil spill.png::CompressedTexture2D::4094088632614712432::1679802841::1679802843::1::::<><>::
-::res://assets/Road lines/::1679802841
+::res://assets/Road lines/::1679802843
 Crossing.png::CompressedTexture2D::3651983058668685689::1679802841::1679802843::1::::<><>::
 Orange striped bottom.png::CompressedTexture2D::5445091044125308923::1679802841::1679802843::1::::<><>::
 Orange striped top.png::CompressedTexture2D::1701562272519132792::1679802841::1679802843::1::::<><>::
@@ -70,16 +81,16 @@ Road lines white broken degraded.png::CompressedTexture2D::5881401693944092349::
 Road lines white broken.png::CompressedTexture2D::5196486958704370886::1679802841::1679802843::1::::<><>::
 Road lines white full degraded.png::CompressedTexture2D::443106550222645424::1679802841::1679802843::1::::<><>::
 Road lines white full.png::CompressedTexture2D::3971043231174855517::1679802841::1679802843::1::::<><>::
-::res://assets/Side walk objects/::1679802841
+::res://assets/Side walk objects/::1679802843
 Fire hydrant.png::CompressedTexture2D::6147198617138239373::1679802841::1679802843::1::::<><>::
 Mail box.png::CompressedTexture2D::3135672221693255903::1679802841::1679802843::1::::<><>::
 Phone booth.png::CompressedTexture2D::9169015778527629848::1679802841::1679802843::1::::<><>::
 Trash can fallen.png::CompressedTexture2D::3242754139610710823::1679802841::1679802843::1::::<><>::
 Trash can.png::CompressedTexture2D::958200627666313904::1679802841::1679802843::1::::<><>::
-::res://assets/Street lights/::1679802841
+::res://assets/Street lights/::1679802843
 Street light 2.png::CompressedTexture2D::3144245219540368800::1679802841::1679802843::1::::<><>::
 Street light.png::CompressedTexture2D::2045529618249933853::1679802841::1679802843::1::::<><>::
-::res://assets/Traffic lights/::1679802841
+::res://assets/Traffic lights/::1679802843
 Traffic light green.png::CompressedTexture2D::7677769949524742699::1679802841::1679802843::1::::<><>::
 Traffic light orange.png::CompressedTexture2D::10795355438559284::1679802841::1679802843::1::::<><>::
 Traffic light red.png::CompressedTexture2D::6047794260819031772::1679802841::1679802843::1::::<><>::

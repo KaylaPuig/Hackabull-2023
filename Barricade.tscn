@@ -1,0 +1,73 @@
+[gd_scene load_steps=12 format=3 uid="uid://c20llmj0ws0rb"]
+
+[ext_resource type="Script" path="res://Barricade.gd" id="1_ltnu0"]
+[ext_resource type="Texture2D" uid="uid://jaiegkja8i17" path="res://assets/Construction objects/Street baracade.png" id="2_0dopv"]
+[ext_resource type="Texture2D" uid="uid://bh0pmv05wu7m1" path="res://assets/Construction objects/Street baracade 2.png" id="3_fgrj8"]
+[ext_resource type="Texture2D" uid="uid://bwvorj66v1evf" path="res://assets/Construction objects/Traffic cone.png" id="4_rc5d8"]
+[ext_resource type="Texture2D" uid="uid://bylhboeboql7e" path="res://assets/Road hazards/Oil spill.png" id="5_gpehr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_docvo"]
+atlas = ExtResource("2_0dopv")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpy7n"]
+atlas = ExtResource("3_fgrj8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj6eu"]
+atlas = ExtResource("4_rc5d8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbn6t"]
+atlas = ExtResource("5_gpehr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o5yki"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_docvo")
+}],
+"loop": true,
+"name": &"barricade1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dpy7n")
+}],
+"loop": true,
+"name": &"barricade2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj6eu")
+}],
+"loop": true,
+"name": &"cone",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbn6t")
+}],
+"loop": true,
+"name": &"oil",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfb7t"]
+size = Vector2(16, 16)
+
+[node name="Barricade" type="Node2D"]
+script = ExtResource("1_ltnu0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_o5yki")
+animation = &"barricade1"
+
+[node name="Area2D" type="Area2D" parent="." groups=["floor"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_sfb7t")

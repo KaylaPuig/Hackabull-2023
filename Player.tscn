@@ -94,25 +94,27 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5xrm"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yo3u4"]
 size = Vector2(20, 24)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lem3"]
-size = Vector2(20, 16)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ie7c"]
+size = Vector2(20, 9)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_v82tr")
 
 [node name="Animations" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3e5je")
-animation = &"slide"
-frame_progress = 0.00529794
+animation = &"jump"
 
 [node name="CollisionRect" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_q5xrm")
+shape = SubResource("RectangleShape2D_yo3u4")
 
-[node name="CollisionSlidingRect" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 4)
-shape = SubResource("RectangleShape2D_7lem3")
-disabled = true
+[node name="Deathbox" type="Area2D" parent="."]
+
+[node name="CollisionRect2" type="CollisionShape2D" parent="Deathbox"]
+position = Vector2(-1, 7.5)
+shape = SubResource("RectangleShape2D_4ie7c")
+
+[connection signal="area_entered" from="Deathbox" to="." method="_on_deathbox_area_entered"]

@@ -1,0 +1,89 @@
+[gd_scene load_steps=12 format=3 uid="uid://c6f1ugi6s5m1t"]
+
+[ext_resource type="Script" path="res://Construction Idiots.gd" id="1_03142"]
+[ext_resource type="Texture2D" uid="uid://clx7m4g7kpbrv" path="res://assets/construction men with pole.png" id="1_lodyl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncps1"]
+atlas = ExtResource("1_lodyl")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xmuda"]
+atlas = ExtResource("1_lodyl")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_srub1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncps1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xmuda")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s158x"]
+atlas = ExtResource("1_lodyl")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxpnf"]
+atlas = ExtResource("1_lodyl")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oaggj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s158x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxpnf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_op4mv"]
+atlas = ExtResource("1_lodyl")
+region = Rect2(0, 0, 64, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sgttm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_op4mv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i2k2f"]
+size = Vector2(40, 24)
+
+[node name="Construction Idiots" type="Node2D"]
+script = ExtResource("1_03142")
+
+[node name="C1" type="AnimatedSprite2D" parent="."]
+position = Vector2(16, 2.08165e-12)
+sprite_frames = SubResource("SpriteFrames_srub1")
+autoplay = "default"
+
+[node name="C2" type="AnimatedSprite2D" parent="."]
+position = Vector2(-16, 2.08165e-12)
+sprite_frames = SubResource("SpriteFrames_oaggj")
+autoplay = "default"
+
+[node name="Bar" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.08165e-12, -22)
+sprite_frames = SubResource("SpriteFrames_sgttm")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="." groups=["ceil"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_i2k2f")
