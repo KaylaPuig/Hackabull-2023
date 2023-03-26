@@ -34,5 +34,6 @@ ui_accept={
 
 [rendering]
 
+textures/vram_compression/import_s3tc_bptc=true
 2d/snap/snap_2d_transforms_to_pixel=true
 2d/snap/snap_2d_vertices_to_pixel=true

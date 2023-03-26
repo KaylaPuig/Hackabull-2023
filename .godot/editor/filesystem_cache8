@@ -1,5 +1,5 @@
-fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1679845015
+bdbec74c6e5bd72edee867077d70896c
+::res://::1679848264
 Barricade.gd::GDScript::-1::1679811651::0::1::::<>Node2D<>::
 Barricade.tscn::PackedScene::6720237765467419255::1679845015::0::1::::<><>::res://Barricade.gd<>uid://jaiegkja8i17<>uid://bh0pmv05wu7m1<>uid://bwvorj66v1evf<>uid://bylhboeboql7e
 building4.png::CompressedTexture2D::402791047628171189::1679836742::1679836744::1::::<><>::
@@ -13,6 +13,7 @@ Cutscene.gd::GDScript::-1::1679842624::0::1::::<>Node2D<>::
 Cutscene.tscn::PackedScene::8551542490012895237::1679845015::0::1::::<><>::res://Cutscene.gd<>uid://bepcigp64hr24
 DeathString.gd::GDScript::-1::1679841166::0::1::::<>Node2D<>::
 Distance Display.gd::GDScript::-1::1679800606::0::1::::<>Node2D<>::
+export_presets.cfg::TextFile::-1::1679848141::0::1::::<><>::
 FBI Guy.tscn::PackedScene::3371881018706999546::1679845015::0::1::::<><>::uid://hc41013q6vag
 FunnyQuote.gd::GDScript::-1::1679845009::0::1::::<>Node2D<>::
 Game OVer.gd::GDScript::-1::1679842383::0::1::::<>Node2D<>::
@@ -21,8 +22,8 @@ icon.svg::CompressedTexture2D::6886299511971173896::1679765135::1679765237::1:::
 Infinite Road.gd::GDScript::-1::1679840152::0::1::::<>Node2D<>::
 Letter.gd::GDScript::-1::1679778527::0::1::::<>AnimatedSprite2D<>::
 Letter.tscn::PackedScene::4191295400205411385::1679845015::0::1::::<><>::uid://c2gckcf052anj<>res://Letter.gd
-Menu.gd::GDScript::-1::1679842573::0::1::::<>Node2D<>::
-Menu.tscn::PackedScene::5387934209348075193::1679845015::0::1::::<><>::res://Menu.gd<>uid://eggllgv7aock<>uid://bepcigp64hr24<>uid://c8x3oagi5dkrw<>uid://ovdsp3xof1d3
+Menu.gd::GDScript::-1::1679845918::0::1::::<>Node2D<>::
+Menu.tscn::PackedScene::5387934209348075193::1679848259::0::1::::<><>::res://Menu.gd<>uid://eggllgv7aock<>uid://bepcigp64hr24<>uid://c8x3oagi5dkrw<>uid://ovdsp3xof1d3<>uid://es4tauejyp4u
 Obstacle Spawner.gd::GDScript::-1::1679828474::0::1::::<>Node2D<>::
 Player.gd::GDScript::-1::1679843653::0::1::::<>CharacterBody2D<>::
 Player.tscn::PackedScene::6442852182288542371::1679845015::0::1::::<><>::res://Player.gd<>uid://bnwp72ufmf8w7<>uid://bn7whfw2av4fx<>uid://ckgl1y0xbi0wo
@@ -87,8 +88,9 @@ Construction sign.png::CompressedTexture2D::652898450250379985::1679802841::1679
 Street baracade 2.png::CompressedTexture2D::2930285360432926898::1679802841::1679802843::1::::<><>::
 Street baracade.png::CompressedTexture2D::632192802858413788::1679802841::1679802843::1::::<><>::
 Traffic cone.png::CompressedTexture2D::3974808094996859167::1679802841::1679802843::1::::<><>::
-::res://assets/Music/::1679845807
+::res://assets/Music/::1679848105
 intro.wav::AudioStreamWAV::319708928090444666::1679845807::1679845873::1::::<><>::
+outro.wav::AudioStreamWAV::6673810136160719232::1679848070::1679848105::1::::<><>::
 TECHNO.wav::AudioStreamWAV::814890292624523743::1679844421::1679844627::1::::<><>::
 ::res://assets/player/::1679804643
 player_down_sheet.png::CompressedTexture2D::3345261311143281560::1679792622::1679792623::1::::<><>::
