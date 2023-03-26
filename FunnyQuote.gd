@@ -5,7 +5,11 @@ const funny_quotes = [
 	"You can evade taxes, but you can't  evade me!",
 	"Hackabull 2023 Exclusive",
 	"Knightro would not be proud...",
-	"With great income comes great       incentive to lie."
+	"With great income comes great       incentive to lie.",
+	"Next time try fighting back!",
+	"Hide your assets!",
+	"Did you try sliding?",
+	"Use your legs!"
 ]
 
 # Called when the node enters the scene tree for the first time.
