@@ -25,7 +25,9 @@ func _process(delta):
 		else:
 			fbi_guy_catch_elapsed += delta
 			if fbi_guy_catch_elapsed >= 0.5:
-				get_tree().change_scene_to_file("res://Game OVer.tscn")
+				var game_over = load("res://Game OVer.tscn").instantiate()
+				game_over.set_feet(get_feet_traveled())
+				get_tree().change_scene_to_packed(game_over)
 		return
 	elapsed += delta
 	$"Infinite Road/Sidewalk".position.y = fmod((150 * elapsed), 15)

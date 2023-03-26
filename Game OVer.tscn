@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://c2hl4kjhb3xuk"]
+[gd_scene load_steps=10 format=3 uid="uid://c2hl4kjhb3xuk"]
 
 [ext_resource type="Script" path="res://Game OVer.gd" id="1_8js66"]
 [ext_resource type="Texture2D" uid="uid://brv7nk1uhsnhc" path="res://assets/1040.png" id="2_feqyo"]
 [ext_resource type="Texture2D" uid="uid://day403uqw18p5" path="res://assets/end UI down.png" id="3_11etu"]
 [ext_resource type="Texture2D" uid="uid://bpsbtufw2boge" path="res://assets/end UI.png" id="3_axr81"]
+[ext_resource type="Script" path="res://DeathString.gd" id="5_5q4na"]
+[ext_resource type="Script" path="res://FunnyQuote.gd" id="6_4b056"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lgrwv"]
 atlas = ExtResource("3_11etu")
@@ -44,3 +46,13 @@ position = Vector2(192, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_kd6tw")
 animation = &"down"
 autoplay = "up"
+
+[node name="DeathString" type="Node2D" parent="UI"]
+position = Vector2(-16, 0)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("5_5q4na")
+
+[node name="FunnyQuote" type="Node2D" parent="UI"]
+position = Vector2(-103, -45)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("6_4b056")

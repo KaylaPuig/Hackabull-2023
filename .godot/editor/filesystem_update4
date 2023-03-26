@@ -1,22 +1,11 @@
-res://Player.tscn
-res://Run.tscn
-res://Menu.tscn
-res://Cutscene.tscn
-res://Distance Display.gd
-res://Run.gd
 res://Letter.tscn
-res://Player.gd
-res://Cutscene.gd
-res://Car.tscn
-res://Car.gd
-res://Obstacle Spawner.gd
-res://Barricade.tscn
-res://Barricade.gd
-res://Construction Idiots.tscn
-res://Construction Idiots.gd
+res://DeathString.gd
+res://Player.tscn
 res://FBI Guy.tscn
-res://FBI Guy.gd
+res://Run.tscn
 res://Game OVer.tscn
-res://Game OVer.gd
-res://Menu.gd
+res://Menu.tscn
 res://Building.tscn
+res://Game OVer.gd
+res://FunnyQuote.gd
+res://Run.gd

@@ -1,14 +1,21 @@
 extends Node2D
 
+# You managed to evade the authorities for x feet!
+
+var feet = 0
 var selection = 0
 var count_for_ui = false
 var can_do_input = false
 var elapsed = 0.0
 var elapsed_for_ui = 0.0
 
+func set_feet(ft):
+	feet = ft
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	$UI/DeathString.make_string(feet)
+	$UI/FunnyQuote.make_string()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
