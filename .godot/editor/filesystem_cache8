@@ -1,37 +1,37 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1679842056
+::res://::1679844574
 Barricade.gd::GDScript::-1::1679811651::0::1::::<>Node2D<>::
-Barricade.tscn::PackedScene::6720237765467419255::1679812976::0::1::::<><>::res://Barricade.gd<>uid://jaiegkja8i17<>uid://bh0pmv05wu7m1<>uid://bwvorj66v1evf<>uid://bylhboeboql7e
+Barricade.tscn::PackedScene::6720237765467419255::1679844574::0::1::::<><>::res://Barricade.gd<>uid://jaiegkja8i17<>uid://bh0pmv05wu7m1<>uid://bwvorj66v1evf<>uid://bylhboeboql7e
 building4.png::CompressedTexture2D::402791047628171189::1679836742::1679836744::1::::<><>::
 Building.gd::GDScript::-1::1679839258::0::1::::<>AnimatedSprite2D<>::
-Building.tscn::PackedScene::4518336218383957770::1679842056::0::1::::<><>::uid://b3mpvau0fdydt<>uid://d1p2m5jk30jou<>res://Building.gd<>uid://cflgken0p8p5g<>uid://2asyiyjej4oe<>uid://j0qisqqflt61
+Building.tscn::PackedScene::4518336218383957770::1679844574::0::1::::<><>::uid://b3mpvau0fdydt<>uid://d1p2m5jk30jou<>res://Building.gd<>uid://cflgken0p8p5g<>uid://2asyiyjej4oe<>uid://j0qisqqflt61
 Car.gd::GDScript::-1::1679811071::0::1::::<>Node2D<>::
-Car.tscn::PackedScene::2640871787268535598::1679812976::0::1::::<><>::res://Car.gd<>uid://ckwdjn6c3b15p<>uid://bfjqx8rpyvrbs<>uid://bl6kkfi348t7i<>uid://gnl6yy0y478s<>uid://bu2j851pxbk2y
+Car.tscn::PackedScene::2640871787268535598::1679844574::0::1::::<><>::res://Car.gd<>uid://ckwdjn6c3b15p<>uid://bfjqx8rpyvrbs<>uid://bl6kkfi348t7i<>uid://gnl6yy0y478s<>uid://bu2j851pxbk2y
 Construction Idiots.gd::GDScript::-1::1679812155::0::1::::<>Node2D<>::
-Construction Idiots.tscn::PackedScene::6960632095557813159::1679812976::0::1::::<><>::res://Construction Idiots.gd<>uid://clx7m4g7kpbrv
-Cutscene.gd::GDScript::-1::1679801820::0::1::::<>Node2D<>::
-Cutscene.tscn::PackedScene::8551542490012895237::1679812976::0::1::::<><>::res://Cutscene.gd<>uid://bepcigp64hr24
+Construction Idiots.tscn::PackedScene::6960632095557813159::1679844574::0::1::::<><>::res://Construction Idiots.gd<>uid://clx7m4g7kpbrv
+Cutscene.gd::GDScript::-1::1679842624::0::1::::<>Node2D<>::
+Cutscene.tscn::PackedScene::8551542490012895237::1679844574::0::1::::<><>::res://Cutscene.gd<>uid://bepcigp64hr24
 DeathString.gd::GDScript::-1::1679841166::0::1::::<>Node2D<>::
 Distance Display.gd::GDScript::-1::1679800606::0::1::::<>Node2D<>::
-FBI Guy.tscn::PackedScene::3371881018706999546::1679842055::0::1::::<><>::uid://hc41013q6vag
+FBI Guy.tscn::PackedScene::3371881018706999546::1679844574::0::1::::<><>::uid://hc41013q6vag
 FunnyQuote.gd::GDScript::-1::1679841968::0::1::::<>Node2D<>::
-Game OVer.gd::GDScript::-1::1679841325::0::1::::<>Node2D<>::
-Game OVer.tscn::PackedScene::6683111004292421278::1679842056::0::1::::<><>::res://Game OVer.gd<>uid://brv7nk1uhsnhc<>uid://day403uqw18p5<>uid://bpsbtufw2boge<>res://DeathString.gd<>res://FunnyQuote.gd
+Game OVer.gd::GDScript::-1::1679842383::0::1::::<>Node2D<>::
+Game OVer.tscn::PackedScene::6683111004292421278::1679844574::0::1::::<><>::res://Game OVer.gd<>uid://brv7nk1uhsnhc<>uid://day403uqw18p5<>uid://bpsbtufw2boge<>res://DeathString.gd<>res://FunnyQuote.gd
 icon.svg::CompressedTexture2D::6886299511971173896::1679765135::1679765237::1::::<><>::
 Infinite Road.gd::GDScript::-1::1679840152::0::1::::<>Node2D<>::
 Letter.gd::GDScript::-1::1679778527::0::1::::<>AnimatedSprite2D<>::
-Letter.tscn::PackedScene::4191295400205411385::1679842056::0::1::::<><>::uid://c2gckcf052anj<>res://Letter.gd
-Menu.gd::GDScript::-1::1679815812::0::1::::<>Node2D<>::
-Menu.tscn::PackedScene::5387934209348075193::1679842056::0::1::::<><>::res://Menu.gd<>uid://eggllgv7aock<>uid://bepcigp64hr24<>uid://c8x3oagi5dkrw
+Letter.tscn::PackedScene::4191295400205411385::1679844574::0::1::::<><>::uid://c2gckcf052anj<>res://Letter.gd
+Menu.gd::GDScript::-1::1679842573::0::1::::<>Node2D<>::
+Menu.tscn::PackedScene::5387934209348075193::1679844574::0::1::::<><>::res://Menu.gd<>uid://eggllgv7aock<>uid://bepcigp64hr24<>uid://c8x3oagi5dkrw<>uid://ovdsp3xof1d3
 Obstacle Spawner.gd::GDScript::-1::1679828474::0::1::::<>Node2D<>::
-Player.gd::GDScript::-1::1679812805::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::6442852182288542371::1679842055::0::1::::<><>::res://Player.gd<>uid://bnwp72ufmf8w7<>uid://bn7whfw2av4fx<>uid://ckgl1y0xbi0wo
-Run.gd::GDScript::-1::1679842050::0::1::::<>Node2D<>::
-Run.tscn::PackedScene::4588770157156870444::1679842056::0::1::::<><>::res://Run.gd<>uid://cx173mivxq2qh<>res://Infinite Road.gd<>uid://5ecntrh0ekrb<>uid://bp60fw4ojrsug<>uid://d2xnlfx6qau8u<>res://Obstacle Spawner.gd<>res://Distance Display.gd<>uid://dwdl2x04ktjnx<>uid://bobmngh0c34be
+Player.gd::GDScript::-1::1679843653::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::6442852182288542371::1679844574::0::1::::<><>::res://Player.gd<>uid://bnwp72ufmf8w7<>uid://bn7whfw2av4fx<>uid://ckgl1y0xbi0wo
+Run.gd::GDScript::-1::1679844574::0::1::::<>Node2D<>::
+Run.tscn::PackedScene::4588770157156870444::1679844623::0::1::::<><>::res://Run.gd<>uid://cx173mivxq2qh<>uid://lu0ehofjg75d<>res://Infinite Road.gd<>uid://5ecntrh0ekrb<>uid://bp60fw4ojrsug<>uid://d2xnlfx6qau8u<>res://Obstacle Spawner.gd<>res://Distance Display.gd<>uid://dwdl2x04ktjnx<>uid://bobmngh0c34be
 Stripped sign 1.png::CompressedTexture2D::724513641248889331::1679807743::1679807750::1::::<><>::
 Stripped sign 2.png::CompressedTexture2D::1336513559191886160::1679807743::1679807750::1::::<><>::
 test.png::CompressedTexture2D::5332456427660035548::1679766000::1679766007::1::::<><>::
-::res://assets/::1679842129
+::res://assets/::1679844421
 1040.png::CompressedTexture2D::3624949683781399204::1679814314::1679814370::1::::<><>::
 building1.png::CompressedTexture2D::154199521957189263::1679835092::1679835093::1::::<><>::
 building3.png::CompressedTexture2D::4711375246128803619::1679836281::1679836340::1::::<><>::
@@ -87,6 +87,8 @@ Construction sign.png::CompressedTexture2D::652898450250379985::1679802841::1679
 Street baracade 2.png::CompressedTexture2D::2930285360432926898::1679802841::1679802843::1::::<><>::
 Street baracade.png::CompressedTexture2D::632192802858413788::1679802841::1679802843::1::::<><>::
 Traffic cone.png::CompressedTexture2D::3974808094996859167::1679802841::1679802843::1::::<><>::
+::res://assets/Music/::1679844433
+TECHNO.wav::AudioStreamWAV::814890292624523743::1679844421::1679844627::1::::<><>::
 ::res://assets/player/::1679804643
 player_down_sheet.png::CompressedTexture2D::3345261311143281560::1679792622::1679792623::1::::<><>::
 player_jump.png::CompressedTexture2D::3366284311345694781::1679792489::1679792503::1::::<><>::
@@ -120,4 +122,3 @@ Street light.png::CompressedTexture2D::2045529618249933853::1679802841::16798028
 Traffic light green.png::CompressedTexture2D::7677769949524742699::1679802841::1679802843::1::::<><>::
 Traffic light orange.png::CompressedTexture2D::10795355438559284::1679802841::1679802843::1::::<><>::
 Traffic light red.png::CompressedTexture2D::6047794260819031772::1679802841::1679802843::1::::<><>::
-::res://gimp assets/::1679770473

@@ -79,16 +79,19 @@ sprite_frames = SubResource("SpriteFrames_oaggj")
 autoplay = "default"
 
 [node name="Bar" type="AnimatedSprite2D" parent="."]
+z_index = 1
 position = Vector2(2.08165e-12, -22)
 sprite_frames = SubResource("SpriteFrames_sgttm")
 autoplay = "default"
 
 [node name="Bar2" type="AnimatedSprite2D" parent="."]
+z_index = 1
 position = Vector2(2.08165e-12, -30)
 sprite_frames = SubResource("SpriteFrames_sgttm")
 autoplay = "default"
 
 [node name="Bar3" type="AnimatedSprite2D" parent="."]
+z_index = 1
 position = Vector2(2.08165e-12, -38)
 sprite_frames = SubResource("SpriteFrames_sgttm")
 autoplay = "default"
