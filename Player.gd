@@ -32,7 +32,7 @@ func _physics_process(delta):
 		start_slide = true
 	if is_on_floor() and not sliding:
 		$Animations.play("walk_down")
-	if not sliding and is_on_floor() and (Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_accept")):
+	if not start_slide and not sliding and is_on_floor() and (Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_accept")):
 		velocity.y = -JUMPHEIGHT
 		$Animations.play("jump")
 	if start_slide:

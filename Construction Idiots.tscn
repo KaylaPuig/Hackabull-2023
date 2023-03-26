@@ -63,7 +63,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i2k2f"]
-size = Vector2(40, 24)
+size = Vector2(46, 16)
 
 [node name="Construction Idiots" type="Node2D"]
 script = ExtResource("1_03142")
@@ -83,7 +83,18 @@ position = Vector2(2.08165e-12, -22)
 sprite_frames = SubResource("SpriteFrames_sgttm")
 autoplay = "default"
 
+[node name="Bar2" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.08165e-12, -30)
+sprite_frames = SubResource("SpriteFrames_sgttm")
+autoplay = "default"
+
+[node name="Bar3" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.08165e-12, -38)
+sprite_frames = SubResource("SpriteFrames_sgttm")
+autoplay = "default"
+
 [node name="Area2D" type="Area2D" parent="." groups=["ceil"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -14)
 shape = SubResource("RectangleShape2D_i2k2f")

@@ -21,7 +21,9 @@ func _process(delta):
 	
 	if Input.is_action_just_pressed("ui_accept"):
 		if selector_position == 0:
-			get_tree().change_scene_to_file("res://Cutscene.tscn")
+			var new_scene = load("res://Cutscene.tscn").instantiate()
+			get_tree().get_root().add_child(new_scene)
+			get_node(".").free()
 		if selector_position == 1:
 			get_tree().quit()
 

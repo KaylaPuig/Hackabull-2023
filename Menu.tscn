@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://ci07qvtei1ucv"]
+[gd_scene load_steps=9 format=3 uid="uid://ci07qvtei1ucv"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_waj8h"]
 [ext_resource type="Texture2D" uid="uid://eggllgv7aock" path="res://assets/buttons.png" id="2_63qt5"]
 [ext_resource type="Texture2D" uid="uid://bepcigp64hr24" path="res://assets/cutscene-16frames.png" id="2_b56m2"]
 [ext_resource type="Texture2D" uid="uid://c8x3oagi5dkrw" path="res://assets/button_selector.png" id="3_nrnxy"]
+[ext_resource type="Texture2D" uid="uid://ovdsp3xof1d3" path="res://assets/title.png" id="5_owvnt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6inaw"]
 atlas = ExtResource("2_b56m2")
@@ -44,3 +45,8 @@ texture = ExtResource("3_nrnxy")
 position = Vector2(-73, 2.08165e-12)
 texture = ExtResource("2_63qt5")
 centered = false
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(192, 109)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("5_owvnt")

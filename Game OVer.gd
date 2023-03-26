@@ -42,6 +42,10 @@ func _process(delta):
 		
 		if Input.is_action_just_pressed("ui_accept"):
 			if selection == 0:
-				get_tree().change_scene_to_file("res://Run.tscn")
+				var new_scene = load("res://Run.tscn").instantiate()
+				get_tree().get_root().add_child(new_scene)
+				get_node(".").free()
 			else:
-				get_tree().change_scene_to_file("res://Menu.tscn")
+				var new_scene = load("res://Menu.tscn").instantiate()
+				get_tree().get_root().add_child(new_scene)
+				get_node(".").free()

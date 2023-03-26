@@ -9,3 +9,10 @@ res://Building.tscn
 res://Game OVer.gd
 res://FunnyQuote.gd
 res://Run.gd
+res://Menu.gd
+res://Cutscene.tscn
+res://Cutscene.gd
+res://Barricade.tscn
+res://Car.tscn
+res://Construction Idiots.tscn
+res://Player.gd
