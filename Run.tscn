@@ -1,18 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://b6m3myocy3rce"]
 
-[ext_resource type="Script" path="res://Run.gd" id="1_yg6x3"]
+[ext_resource type="Script" path="res://Run.gd" id="1_7gxrf"]
 [ext_resource type="PackedScene" uid="uid://cx173mivxq2qh" path="res://Player.tscn" id="2_h4su4"]
 [ext_resource type="Texture2D" uid="uid://c5d1l18bem7ea" path="res://icon.svg" id="3_yadts"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_aw8fr"]
 
 [node name="Run" type="Node2D"]
-script = ExtResource("1_yg6x3")
+script = ExtResource("1_7gxrf")
 
 [node name="Player" parent="." instance=ExtResource("2_h4su4")]
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position_smoothing_enabled = true
 
 [node name="invisible floor" type="StaticBody2D" parent="."]
 
@@ -24,3 +21,5 @@ shape = SubResource("WorldBoundaryShape2D_aw8fr")
 position = Vector2(3.50001, 133.5)
 scale = Vector2(3.02344, 0.195312)
 texture = ExtResource("3_yadts")
+
+[node name="Camera2D" type="Camera2D" parent="."]
