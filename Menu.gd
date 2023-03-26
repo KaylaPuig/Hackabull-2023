@@ -7,7 +7,7 @@ const END_POS = 244
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$Song.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,6 +23,7 @@ func _process(delta):
 		if selector_position == 0:
 			var new_scene = load("res://Cutscene.tscn").instantiate()
 			get_tree().get_root().add_child(new_scene)
+			$Song.stop()
 			get_node(".").free()
 		if selector_position == 1:
 			get_tree().quit()
