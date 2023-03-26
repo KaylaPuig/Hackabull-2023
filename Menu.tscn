@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ci07qvtei1ucv"]
+[gd_scene load_steps=10 format=3 uid="uid://ci07qvtei1ucv"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_waj8h"]
 [ext_resource type="Texture2D" uid="uid://eggllgv7aock" path="res://assets/buttons.png" id="2_63qt5"]
 [ext_resource type="Texture2D" uid="uid://bepcigp64hr24" path="res://assets/cutscene-16frames.png" id="2_b56m2"]
 [ext_resource type="Texture2D" uid="uid://c8x3oagi5dkrw" path="res://assets/button_selector.png" id="3_nrnxy"]
 [ext_resource type="Texture2D" uid="uid://ovdsp3xof1d3" path="res://assets/title.png" id="5_owvnt"]
+[ext_resource type="AudioStream" uid="uid://es4tauejyp4u" path="res://assets/Music/intro.wav" id="6_skxn5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6inaw"]
 atlas = ExtResource("2_b56m2")
@@ -50,3 +51,6 @@ centered = false
 position = Vector2(192, 109)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("5_owvnt")
+
+[node name="Song" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_skxn5")
